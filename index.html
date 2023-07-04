@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Flix Finder</title>
+  <script src="http://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="genre-box">
+    <form id="genre-form">
+      <label for="genres">Choose a genre:</label>
+      <select id="genres" name="genres">
+        <option class="actionMovies action" id="action" value="1">Action</option>
+        <option class="animeMovies anime" value="33">Anime</option>
+        <option class="comedyMovies comedy" value="4">Comedy</option>
+        <option class="documentaryMovies documentary" value="6">Documentary</option>
+        <option class="sciFiMovies science-fiction" value="15">Sci-fi</option>
+        <option class="horrorMovies horror" value="11">Horror</option>
+        <option class="thrillerMovies thriller" value="17">Thriller</option>
+        <option class="DramaMovies drama" value="7">Drama</option>
+        <option class="westernMovies western" value="19">Western</option>
+        <option class="adventureMovies adventure" value="2">Adventure</option>
+        <option class="musicalMovies musical" value="32">Musical</option>
+      </select>
+      <input id="startbtn" type="submit" value="Submit">
+
+    </form>
+  </div>
+  <div class="about-us">
+    <a class="about" href="about.html">About Us</a>
+  </div>
+
+  <div>
+    <form onsubmit="myFunction(event)" id="user">
+      <!-- <div> -->
+        <label>Name</label>
+        <input type="text" id="genre_title" required />
+      <!-- </div> -->
+        <label>interested</label> 
+      <input value="yes" type="radio" id="yesAnswer" name="answer" required />
+
+      <label>not interested</label> 
+      <input value="yes" type="radio" id="yesAnswer" name="answer" required />
+      <!-- <input type="radio" id="noAnswer" name="answer" required /> No
+      <input type="radio" id="naAnswer" name="answer" required /> not sure. -->
+      <input type="submit" value="Submit" id="userIn" />
+    </form>
+
+
+  </div>
+
+
+  <div class="tinder--buttons">
+    <button id="nope"><i class="fa fa-remove"></i></button>
+    <button id="love"><i class="fa fa-heart"></i></button>
+  </div>
+  <div class="tinder">
+    <div class="tinder--status">
+      <i class="fa fa-remove"></i>
+      <i class="fa fa-heart"></i>
+    </div>
+    <div class="tinder--cards">
+    </div>
+  </div>
+  
+  <!-- for localstorage  -->
+  <!-- <input type="submit" class="lovedMovie" id="loved"></input> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
